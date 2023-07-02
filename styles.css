@@ -1,0 +1,158 @@
+:root{
+    --main-bg-color: #F8E831;
+    --text-color:  #047BD5;
+    --default-font: sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+header ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--default-font);
+}
+header ul li a:hover{
+    font-weight: bolder;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+input{
+    height: 25px;
+    width: 30vw;
+    border-radius: 5px;
+    border: thin solid black;
+}
+
+button{
+    background-color: #F8E831;
+    color:  #047BD5;
+    height: 25px;
+    width: 55px;
+    border-radius: 3px;
+    border: thin solid black
+}
+
+main{
+    min-height: calc(100vh - 10vh - 50px);
+}
+
+
+
+#img1{
+    width: 80vw;
+    margin:auto;
+}
+.slider{
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 80vw;
+}
+
+.card{
+    
+    padding: 20px;
+    font-family: sans-serif;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.innercard{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.card-img{
+    width: 200px;
+    padding: 5px;
+}
+
+footer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom:0px;
+    color: var(--text-color);
+    height: 10vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer p{
+    font-size: 2vh;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        width: 200px;
+    }
+
+    header ul{
+        margin: 0px;
+    }
+
+    #search{
+        margin: 0px;
+    }
+
+    input{
+        width: 150px;
+    }
+
+    .card-img{
+        width: 100px;
+    }
+
+    main{
+        font-size: small;
+    }
+}
